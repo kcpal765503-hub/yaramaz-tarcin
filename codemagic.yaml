@@ -2,11 +2,8 @@ workflows:
   default-workflow:
     name: Default Workflow
     instance_type: mac_mini_m2
-    environment:
-      flutter: stable
-    working_directory: .
     scripts:
-      - name: Build App Bundle
-        script: flutter build appbundle --release
+      - name: Gradle ile AAB Paketi Oluştur
+        script: ./gradlew bundleRelease
     artifacts:
-      - build/app/outputs/bundle/release/*.aab
+      - app/build/outputs/bundle/release/*.aab
