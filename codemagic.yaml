@@ -4,6 +4,7 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       flutter: stable
+    working_directory: .
     scripts:
       - name: Build App Bundle
         script: flutter build appbundle --release
