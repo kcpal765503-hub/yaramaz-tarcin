@@ -1,0 +1,6 @@
+{
+  "name": "Yaramaz Tarçın",
+  "description": "2D akıcı parkour oyunu! Tarçın rengindeki yaramaz kedi ile mamaları topla, düşmeden yüksek skor yap!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
