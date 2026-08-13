@@ -3,7 +3,9 @@ workflows:
     name: Default Workflow
     instance_type: mac_mini_m2
     scripts:
-      - name: Gradle ile AAB Paketi Oluştur
-        script: ./gradlew bundleRelease
+      - name: Gradle Wrapper Olustur ve Derle
+        script: |
+          gradle wrapper
+          ./gradlew bundleRelease
     artifacts:
       - app/build/outputs/bundle/release/*.aab
