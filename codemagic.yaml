@@ -1,0 +1,11 @@
+workflows:
+  default-workflow:
+    name: Default Workflow
+    instance_type: mac_mini
+    environment:
+      flutter: stable
+    scripts:
+      - name: Build App Bundle
+        script: flutter build appbundle --release
+    artifacts:
+      - build/app/outputs/bundle/release/*.aab
